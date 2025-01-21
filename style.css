@@ -1,0 +1,142 @@
+/* 作者：deepseek V3 chat, qwen2.5-coder */
+
+/*设置页面背景为黑色*/
+body {
+    background-color: #efefef;
+}
+
+/* 限制内容宽度 */
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+}
+
+/* 居中 */
+h1,
+h2 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 居中 */
+.parent-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#slider {
+    width: 85%;
+}
+
+/* 进度点的样式定义，包括大小、形状和颜色。 */
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #efefef;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+/* 当进度点被激活时，改变其颜色。 */
+.dot.active {
+    background-color: #1e1e1e;
+}
+
+/* Binary Square Progress Bar Styles */
+#binary-square-progress {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 2px solid #000;
+    margin: 20px 0;
+}
+
+/********************************/
+
+/* 分型方块基座 */
+.binary-square {
+    position: absolute;
+    background-color: #efefef;
+    border: 2px solid #000;
+    transition: background-color 0.3s;
+}
+
+/** 下面是每个分型方块的位置定义，每个方块代表一个二进制位的激活状态。 */
+
+/* Bit 7: 50% of the square (top half) */
+#bit7-square {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Bit 6: 25% of the square (top-right quarter) */
+#bit6-square {
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 50%;
+}
+
+/* Bit 5: 12.5% of the square (bottom-left eighth) */
+#bit5-square {
+    width: 25%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+}
+
+/* Bit 4: 6.25% of the square (bottom-left sixteenth) */
+#bit4-square {
+    width: 25%;
+    height: 25%;
+    top: 50%;
+    left: 75%;
+}
+
+/* Bit 3: 3.125% of the square (bottom-middle sixteenth) */
+#bit3-square {
+    width: 12.5%;
+    height: 25%;
+    top: 75%;
+    left: 75%;
+}
+
+/* Bit 2: 1.5625% of the square (bottom-middle thirty-second) */
+#bit2-square {
+    width: 12.5%;
+    height: 12.5%;
+    top: 75%;
+    left: 87.5%;
+}
+
+/* Bit 1: 0.78125% of the square (bottom-right thirty-second) */
+#bit1-square {
+    width: 6.25%;
+    height: 12.5%;
+    top: 87.5%;
+    left: 87.5%;
+}
+
+/* Bit 0: 0.390625% of the square (bottom-right sixty-fourth) */
+#bit0-square {
+    width: 6.25%;
+    height: 12.5%;
+    top: 87.5%;
+    left: 93.75%;
+}
+
+/* Active state for binary squares */
+.binary-square.active {
+    background-color: #1e1e1e;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二进制进度条 - 两种视觉效果 demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>二进制进度条</h1>
+        <h2>两种视觉效果 demo</h2>
+
+        <p>点状二进制进度条：</p>
+        <div class="parent-container">
+            <div id="progress-bar">
+                <!-- 8 dots representing 8 bits -->
+                <div class="dot" id="bit7"></div>
+                <div class="dot" id="bit6"></div>
+                <div class="dot" id="bit5"></div>
+                <div class="dot" id="bit4"></div>
+                <div class="dot" id="bit3"></div>
+                <div class="dot" id="bit2"></div>
+                <div class="dot" id="bit1"></div>
+                <div class="dot" id="bit0"></div>
+            </div>
+        </div>
+
+        <p>分型方块二进制进度条：</p>
+        <div class="parent-container">
+            <div id="binary-square-progress">
+                <div class="binary-square" id="bit7-square"></div>
+                <div class="binary-square" id="bit6-square"></div>
+                <div class="binary-square" id="bit5-square"></div>
+                <div class="binary-square" id="bit4-square"></div>
+                <div class="binary-square" id="bit3-square"></div>
+                <div class="binary-square" id="bit2-square"></div>
+                <div class="binary-square" id="bit1-square"></div>
+                <div class="binary-square" id="bit0-square"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p style="text-align: center;">当前值为：<span id="current-value" style="font-size: 40px; color: #1e1e1e;">13009</span> / 255</p>
+
+        <label for="slider">控制条:</label><input type="range" id="slider" min="0" max="255" value="10">
+        <label for="switch">切换为手动控制模式 - 开关:</label><input type="checkbox" id="switch">
+
+        <hr>
+        <p>说明: 勾选"开关"后可手动通过"控制条"设置二进制进度条的值. <br>鼠标放置控制条上方时可通过滚轮微调</p>
+        <div style="height: 20px;"></div>
+
+        <p style="text-align: center;">@NGC13009</p>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
