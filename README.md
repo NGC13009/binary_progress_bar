@@ -1,6 +1,8 @@
 # binary_progress_bar
 A progress bar demo with "binary" display.
 
+![img](./img.png)
+
 ### Usage
 You can start a local server directly in Python
 
