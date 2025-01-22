@@ -4,6 +4,13 @@ A progress bar demo with "binary" display.
 ![img](./img.png)
 
 ### Usage
+
+#### In GitHub page
+
+[binary_progress_bar](https://ngc13009.github.io/binary_progress_bar/)
+
+#### By self
+
 You can start a local server directly in Python
 
 ```bash
